@@ -1,30 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Page personnelle de Keenan Penner</title>
+<meta charset="UTF-8">
+<title>Home -- Keenan Penner</title>
 <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
-<body>
-<img id="banner" src="banner.png" />
-<div id="logo">
-<h1>Keenan Penner</h1>
-<h2>Bienvenue sur ma page personnelle</h2>
-</div>
+
+<body id="home">
+
+<!-- NAVIGATION BAR -->
+
 <nav>
-<ul>
-<li><a href="indexl.html">Accueil</a></li>
-<li><a href="publi.pdf">Publications</a></li>
-<li><a href="enseignement.html">Enseignement</a></li>
-<li><a href="C:\Users\keena\OneDrive\Bureau\Math\LaTeX\CV\CV.pdf" target="_blank">CV</a></li>
-</ul>
+	<div class="links">
+	<a data-active="home" href="pagePerso.html" title="Home">Home</a>
+    <a data-active="research" href="recherche.html" title="Research">Research</a>
+    <a data-active="teaching" href="enseignement.html" title="Teaching">Teaching</a>
+    <a data-active="cv" href="C:\Users\keena\OneDrive\Bureau\Math\LaTeX\CV\CV.pdf" title="CV" target="_blank">CV</a>
+</div>
 </nav>
-<div id="content">
-<p>Je suis actuellement étudiant en seconde année de thèse à l'Université du Littoral Côte d'Opale. Ma thèse s'intitule "L'arbre d'agrégation limitée par diffusion interne". Je la réalise sous la direction de <a href="https://www-lmpa.univ-littoral.fr/~chenavier/" target=" blank">Nicolas Chenavier</a>, <a href="https://sites.google.com/view/pageprodedavidcoupier/" target="_blank">David Coupier</a> et <a href="https://arousselle.perso.math.cnrs.fr/" target="_blank">Arnaud Rousselle</a> . 
+
+
+<!-- HEADER -->
+
+<header>	
+<img id="banner" src="banner1.png" />
+</header>
+
+
+<!-- MAIN -->
+
+<main>
+
+<section id="intro">
+<div>
+</section>
+<div class="container">
+	<div>
+		<img id="profile" src="me.jpg" />
+	</div>
+	<div class="text" id="about">
+<!-- Je suis actuellement étudiant en seconde année de thèse à l'Université du Littoral Côte d'Opale. Ma thèse s'intitule "L'arbre d'agrégation limitée par diffusion interne". Je la réalise sous la direction de <a href="https://www-lmpa.univ-littoral.fr/~chenavier/" target=" blank">Nicolas Chenavier</a>, <a href="https://sites.google.com/view/pageprodedavidcoupier/" target="_blank">David Coupier</a> et <a href="https://arousselle.perso.math.cnrs.fr/" target="_blank">Arnaud Rousselle</a>. --> 
+<h2>Welcome to my personal webpage!</h2>
+<p> I am a second year PhD student at the Université du Littoral Côte d'Opale under the supervision of <a href="https://www-lmpa.univ-littoral.fr/~chenavier/" target=" blank">Nicolas Chenavier</a>, <a href="https://sites.google.com/view/pageprodedavidcoupier/" target="_blank">David Coupier</a> and <a href="https://arousselle.perso.math.cnrs.fr/" target="_blank">Arnaud Rousselle</a>.
 </p>
+<p> I am working in probability theory and my thesis work is about the IDLA tree (some simulations are given below).</p>
+	</div>
+</div>
+
+
+	<div class="row">
+		<div class="imgContainer">
+			<img src="IDLAtree.png"/ height="350" width="350" />
+			<p class="caption" >A 2-dimensional IDLA tree </p>
+		</div>
+		<div class="imgContainer">
+			<img src="branchtest.png"/ height="350" width="350" />
+			<p class="caption">A 2-dimensional IDLA tree with a highlighted branch</p>
+		</div>
+		<div class="imgContainer">
+			<img src="IDLAtree3D.png"/ height="350" width="350" />
+			<p class="caption">A 3-dimensional IDLA tree</p>
+		</div>
+	</div>
+
+
 <div id="contact">
-<p>Pour toute question vous pouvez me contacter a l'adresse suivante: 
-<span>keenan[dot]penner[at]univ-littoral[dot]fr.</span></p>
+	<h2>Contact:</h1>
+	<p>
+	keenan.penner@univ-littoral.fr
+	</p>
+
+	<p>Bureau C136<br>
+	LMPA<br>
+	Centre Universitaire de la Mi-Voix<br>
+	50 rue Ferdinand Buisson<br>
+	CS 80699<br>
+	62228 CALAIS Cedex France<br>
+	</p>
 </div>
-</div>
+
+
+
+
+</main>
+
+<script type="text/javascript" src="sticky.js"></script>
+
 </body>
 </html>

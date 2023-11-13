@@ -1,42 +1,128 @@
-nav {
-text-align : right; /* tout doit etre a droite */
-}
-nav ul { /* liste dans la navigation */
-margin : 1%
-3% 0 0;
-padding : 0; /* enleve l'indentation de defaut */
-float : right; /* colonne a droite par rapport au logo */
-}
-nav ul li {
-display : inline-block; /* les elements de la liste sont presentes en ligne
-mais se comportent comme un block */
-}
-nav li a {
-display : block; /* les liens se comportent comme des block individuels,
-cela evite le chevauchement en cas de petite largeur d'ecran */
-padding : 1em;
-margin : 1em 1.1em;
-text-decoration : none; /* enleve le soulignement habituel des liens */
-letter-spacing : 1.3px; /* pour plus de lisibilite */
-font-size : 0.9em;
-color : #F5F5F5;
-background-color : #003366;
-}
-nav li a:hover { /* style des boutons de liens qu'on survole */
-background-color : #0066CC;
-color : #F5F5F5;
-font-weight : normal; /* car on a regle le cas general sur bold */
-}
-#active { /* element ayant l'id "active" */
-background-color : #0066CC;
-color : #F5F5F5;
+*{
+
+
+
+padding: 0;
+
+box-sizing: border-box;
+
+font-family: sans-serif;
+
 }
 
-#banner { /* une banniere pour la decoration */
-background : #003366 url(banner.png) repeat center; /* couleur image
-repetition */
-height : cover; /* hauteur de la banniere */
-width: 1500px;
-background-size : cover; /* prend la largeur de page */
-clear : both;
+.container{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+body{
+
+min-height: 100vh;
+
+}
+
+main{
+
+padding: 20px 20px;
+
+}
+
+#profile{
+
+padding: 10px 20px;
+
+}
+
+nav {
+
+background-color: whitesmoke;
+
+display: grid;
+
+gap: 1rem;
+
+
+
+font: 140% system-ui;
+
+text-align: center ;
+
+width: 100%;
+
+padding: 2rem 1rem;
+
+
+  /* Pay special attention here! */
+position: sticky;
+top: 0px;
+}
+
+nav a {
+  
+  text-decoration: none;
+
+  display: inline-block;
+
+  padding: 1000px 50 px;
+
+
+}
+
+nav a:hover,
+nav a.active {
+font-weight: bold; 
+}
+
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+#profile {
+height : 250px;
+border-radius: 50%;
+}
+
+.text{
+
+	float: left;
+
+}
+
+nav a::before {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+
+#banner {
+width: 100% ;
+}
+
+a:visited { 
+ text-decoration: none; 
+ color: black; 
+}
+
+.imgContainer {
+  float:left;
+}
+
+.caption{
+
+	text-align:center;
+}
+
+#contact{
+
+	padding: 50px ;
+	text-align: center;
 }
