@@ -1,23 +1,44 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Home -- Keenan Penner</title>
-<link href="style.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keenan Penner Math</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="data/Species_Logo-removetext.png">
 </head>
+
 
 <body id="home">
 
 <!-- NAVIGATION BAR -->
 
-<nav>
-	<div class="links">
-	<a data-active="home" href="pagePerso.html" title="Home">Home</a>
-    <a data-active="research" href="recherche.html" title="Research">Research</a>
-    <a data-active="teaching" href="enseignement.html" title="Teaching">Teaching</a>
-    <a data-active="cv" href="C:\Users\keena\OneDrive\Bureau\Math\LaTeX\CV\CV.pdf" title="CV" target="_blank">CV</a>
-</div>
+<nav class="navbar">
+	<div class="container">
+		<div class="main-menu">
+			<ul>
+				<li>
+					<a class="active" href="pagePerso.html">Home</a>
+				</li>
+				<li>
+					<a href="recherche.html">Research</a>
+				</li>
+				<li>
+					<a href="enseignement.html">Teaching</a>
+				</li>
+				<li>
+					<a  href="C:\Users\keena\OneDrive\Bureau\Math\LaTeX\CV\CV.pdf" title="CV" target="_blank">CV</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 </nav>
 
 
@@ -50,25 +71,24 @@
 
 <p> I am a second year PhD student at the Université du Littoral Côte d'Opale under the supervision of <a href="https://www-lmpa.univ-littoral.fr/~chenavier/" target=" blank">Nicolas Chenavier</a>, <a href="https://sites.google.com/view/pageprodedavidcoupier/" target="_blank">David Coupier</a> and <a href="https://arousselle.perso.math.cnrs.fr/" target="_blank">Arnaud Rousselle</a>.
 </p>
-<p> I am working in probability theory and my thesis work is about the IDLA tree (some simulations are given below).</p>
+<p> I am working in probability theory and my thesis work is about IDLA aggregates and trees (some simulations are given below).</p>
 	</div>
 </div>
 
-
-	<div class="row">
-		<div class="imgContainer">
-			<img src="data/IDLAtree.png"/ height="350" width="350" />
-			<p class="caption" >A 2-dimensional IDLA tree </p>
-		</div>
-		<div class="imgContainer">
-			<img src="data/branchtest.png"/ height="350" width="350" />
-			<p class="caption">A 2-dimensional IDLA tree with a highlighted branch</p>
-		</div>
-		<div class="imgContainer">
-			<img src="data/IDLAtree3D.png"/ height="350" width="350" />
-			<p class="caption">A 3-dimensional IDLA tree</p>
-		</div>
+<div class="row">
+	<div class="imgContainer">
+		<img src="data/IDLAtree.png"/ height="350" width="350" />
+		<p class="caption" >A 2-dimensional IDLA tree </p>
 	</div>
+	<div class="imgContainer">
+		<img src="data/branchtest.png"/ height="350" width="350" />
+		<p class="caption">A 2-dimensional IDLA tree with a highlighted branch</p>
+	</div>
+	<div class="imgContainer">
+		<img src="data/IDLAtree3D.png"/ height="350" width="350" />
+		<p class="caption">A 3-dimensional IDLA tree</p>
+	</div>
+</div>
 
 
 <div id="contact">
@@ -85,10 +105,6 @@
 	62228 CALAIS Cedex France<br>
 	</p>
 </div>
-
-
-
-
 </main>
 
 <script type="text/javascript" src="sticky.js"></script>
