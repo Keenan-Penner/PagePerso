@@ -1,0 +1,204 @@
+*{
+padding: 0;
+box-sizing: border-box;
+margin: 0;
+}
+
+:root {
+  --primary-color: #ffa500;
+  --dark-color: #333;
+  --light-color: #f4f4f6;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #fff;
+  padding-bottom: 50px;
+  padding-bottom: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+#profile{
+padding: 10px 20px;
+}
+
+/* Navbar */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: whitesmoke;
+  padding: 20px 50px;
+  overflow: hidden;
+  z-index: 100
+  /*ensures the navbar is on top of everything */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 400;
+  transition: 0.5s;
+  font-size: large;
+}
+
+.navbar ul li a:hover {
+  color: #7CB9E8;
+}
+
+.navbar ul li a.active {
+  font-weight: 900;
+}
+
+/* Hero */
+
+.hero {
+  margin-bottom: 50px;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .hero-content {
+  width: 95%;
+}
+
+.hero .hero-text {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+/* Text classes */
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-l {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 20px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 5px 0 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+#profile {
+height : 250px;
+border-radius: 50%;
+}
+
+.text{
+
+	float: left;
+
+}
+
+
+#banner {
+width: 100% ;
+}
+
+.imgContainer {
+  float:left;
+}
+
+.caption{
+
+	text-align:center;
+}
+
+#contact{
+
+	padding: 50px ;
+	text-align: center;
+}
+
+.titre{
+
+font-size: 130% ;
+
+}
+
+#publis{
+
+font-size: 120%;
+
+font-weight: bold;
+
+}
+
+#talks{
+
+font-size: 120%;
+
+font-weight: bold;
+
+}
