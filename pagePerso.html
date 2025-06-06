@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="data/Species_Logo-removetext.png">
+    <link rel="shortcut icon" href="data/tree2-Copy.png">
 </head>
 
 
@@ -34,7 +34,7 @@
 					<a href="enseignement.html">Teaching</a>
 				</li>
 				<li>
-					<a  href="C:\Users\keena\OneDrive\Bureau\Math\LaTeX\CV\CV.pdf" title="CV" target="_blank">CV</a>
+					<a  href="data/CV.pdf" title="CV" target="_blank">CV</a>
 				</li>
 			</ul>
 		</div>
@@ -53,27 +53,26 @@
 
 <main>
 
-
-
-<section id="intro">
-<div>
-</section>
-<div class="container">
-	<div>
-		<img id="profile" src="data/me.jpg" />
+<section id="intro" class="intro-section">
+	<div class="intro-container">
+		<div class="intro-image">
+			<img id="profile" src="data/me.jpg" alt="Profile photo" />
+		</div>
+		<div class="intro-text">
+			<h2>Welcome to my personal webpage!</h2>
+			<p>
+				I am a second year PhD student at the Université du Littoral Côte d'Opale under the supervision of
+				<a href="https://www-lmpa.univ-littoral.fr/~chenavier/" target="_blank">Nicolas Chenavier</a>,
+				<a href="https://sites.google.com/view/pageprodedavidcoupier/" target="_blank">David Coupier</a>, and
+				<a href="https://arousselle.perso.math.cnrs.fr/" target="_blank">Arnaud Rousselle</a>.
+			</p>
+			<p>
+				I am working in probability theory and my thesis work is about IDLA aggregates and trees (some
+				simulations are given below).
+			</p>
+		</div>
 	</div>
-	<div class="text" id="about">
-<!-- Je suis actuellement étudiant en seconde année de thèse à l'Université du Littoral Côte d'Opale. Ma thèse s'intitule "L'arbre d'agrégation limitée par diffusion interne". Je la réalise sous la direction de <a href="https://www-lmpa.univ-littoral.fr/~chenavier/" target=" blank">Nicolas Chenavier</a>, <a href="https://sites.google.com/view/pageprodedavidcoupier/" target="_blank">David Coupier</a> et <a href="https://arousselle.perso.math.cnrs.fr/" target="_blank">Arnaud Rousselle</a>. -->
-
-<div>
-<h2>Welcome to my personal webpage!</h2>
-</div>
-
-<p> I am a second year PhD student at the Université du Littoral Côte d'Opale under the supervision of <a href="https://www-lmpa.univ-littoral.fr/~chenavier/" target=" blank">Nicolas Chenavier</a>, <a href="https://sites.google.com/view/pageprodedavidcoupier/" target="_blank">David Coupier</a> and <a href="https://arousselle.perso.math.cnrs.fr/" target="_blank">Arnaud Rousselle</a>.
-</p>
-<p> I am working in probability theory and my thesis work is about IDLA aggregates and trees (some simulations are given below).</p>
-	</div>
-</div>
+</section> 
 
 <div class="row">
 	<div class="imgContainer">
@@ -90,21 +89,37 @@
 	</div>
 </div>
 
-
-<div id="contact">
-	<h2>Contact:</h1>
-	<p>
-	keenan.penner@univ-littoral.fr
-	</p>
-
-	<p>Bureau C121<br>
-	LMPA<br>
-	Centre Universitaire de la Mi-Voix<br>
-	50 rue Ferdinand Buisson<br>
-	CS 80699<br>
-	62228 CALAIS Cedex France<br>
-	</p>
+<div class="hero">
+	<div class="container">
+		<div class="hero-content">
+			<h1 class="hero-heading text-xl">
+				Python GUI
+			</h1>
+			<p class="hero-text text-md">
+				I have developed an easy-to-use GUI in Python to simulate some IDLA aggregates. It is available on my GitHub, by clicking 
+				<a href="https://github.com/Keenan-Penner/IDLA-Scripts" target="_blank">here</a>. You will be able to simulate IDLA aggregates and trees in 2D and 3D, along 
+				with some multi-source aggregates, which is what my research focuses on. Each user has the possibility to save the generated 
+				simulations. More info is available on the GitHub page. 
+			<p>
+		</div>
+	</div>
 </div>
+
+<section class="contact">
+	<div clas= 'contact-wrapper'>
+		<h2>Contact:</h2>
+		<p>
+		keenan.penner@univ-littoral.fr
+		</p>
+		<p>Bureau C121<br>
+		LMPA<br>
+		Centre Universitaire de la Mi-Voix<br>
+		50 rue Ferdinand Buisson<br>
+		CS 80699<br>
+		62228 CALAIS Cedex France<br>
+		</p>
+	</div>
+</section>
 </main>
 
 <script type="text/javascript" src="sticky.js"></script>
